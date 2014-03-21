@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WordsBGood.Domain.Entities.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>All Users</h2>
+
+<table class ="Grid">
+    <tr>
+        
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Email)</th>
+        <th>@Html.DisplayNameFor(model => model.Permission)</th>
+    </tr>
+
+@foreach (var item in Model) 
+{
+    <tr>
+       
+        <td> @Html.ActionLink(item.Name, "EditUser", "Admin", new { item.UserId}, null)</td>
+        <td>@item.Email</td>
+        <td>@item.Permission</td>
+        <td>
+            @using (Html.BeginForm("Delete", "Admin"))
+            {
+                @Html.Hidden("userId", item.UserId)
+                <input type ="submit" value ="Delete" />
+            }
+
+        </td>
+    </tr>
+}
+
+</table>
+<p>@Html.ActionLink("Add a new user", "CreateUser")</p>

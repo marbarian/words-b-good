@@ -1,0 +1,32 @@
+﻿@model WordsBGood.Domain.Entities.Category
+
+@{
+    ViewBag.Title = "ShowVocab";
+}
+
+<h2>Showing Words for:  @Model.Subject</h2>
+ <table>
+@foreach (var u in Model.VocabList) 
+    {
+       
+            <tr>
+                <th style="text-align: right">@u.Word: </th>
+                @if(u.Type != null)
+                {
+                    <td >(@u.Type)</td>
+                }
+                else
+                {
+                 <td></td>   
+                }
+                <td>@u.Definition</td>
+            </tr>
+       
+    }
+      </table>
+@Html.HiddenFor(x => x.Subject)
+
+@if(Model.CategoryId != 1)
+{
+        @Html.ActionLink("Add Vocab to:  " + Model.Subject, "AddVocab", "Vocab", new { subject = Model.Subject}, null) <br />
+}

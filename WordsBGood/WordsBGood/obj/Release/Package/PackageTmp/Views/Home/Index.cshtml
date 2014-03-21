@@ -1,0 +1,17 @@
+﻿@model WordsBGood.Domain.Entities.Vocab
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<h2>Welcome To the Vocab Builder Web Site</h2>
+
+<p>Today's word is:  @Model.Word:  (@Model.Type)</p>
+<p>The definition is: @Model.Definition</p>
+<h3>Please Register or Login for More Wordy Fun</h3>
+<!--html helper method. 1st param is text to display in link, 2nd is action to perform
+    when the user clicks.-->
+ <br />
+
+ 
