@@ -1,0 +1,48 @@
+﻿@using WordsBGood.Domain.Entities
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/Content/Site.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="~/Pictures/WordyHeading.png" />
+    </header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                @if (Session["user"] == null)
+                {
+                    <li>@Html.ActionLink("Register Now", "NewUserForm", "Home")</li>
+                    <li> @Html.ActionLink("Login", "LoginForm", "Home")</li>
+                }
+                else
+                {
+                    <li>@Html.ActionLink("See all categories", "UserCategories", "Home")</li>
+                    <li>@Html.ActionLink("Add Category", "AddCategory", "Home") </li>
+                    <li>@Html.ActionLink("See all Online Users", "OnlineList", "Home")</li>
+                    <li>@Html.ActionLink("Quiz Yourself", "QuizSetup", "Quiz")</li>
+                    <li>@Html.ActionLink("Logout", "LoggedOut", "Home")</li>
+                  
+                    User user = (User)HttpContext.Current.Session["user"];
+                    if (user.Permission == "Admin")
+                    {
+                            <li>@Html.ActionLink("Administrative Tasks", "Index", "Admin")</li>
+                    }
+                }
+            </ul>
+        </nav>
+    <div id ="MainContent" >
+        
+            @RenderBody()
+       
+    </div>
+    <footer>
+        &copy Marian Kristiansen, 2014
+    </footer>
+</body>
+</html>

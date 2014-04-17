@@ -37,9 +37,11 @@ namespace WordsBGood.WebUI.Controllers
         }
         public ViewResult Index()
         {
-            DateTime today = System.DateTime.Today;
-            Vocab word = vocabRepo.GetVocab(today);
-            return View(word);
+            
+                DateTime today = System.DateTime.Today;
+                Vocab word = vocabRepo.GetVocab(today);
+                return View(word);
+            
         }
         //tested
         public ViewResult OnlineList()

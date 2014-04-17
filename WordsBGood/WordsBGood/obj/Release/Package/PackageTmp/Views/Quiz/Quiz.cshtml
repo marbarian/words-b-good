@@ -1,0 +1,29 @@
+﻿@model WordsBGood.Domain.Entities.Quiz
+
+@{
+    ViewBag.Title = "Quiz";
+}
+
+<h2>Quiz</h2>
+<!--
+<script type="text/javascript">
+    var clock = document.getElementById('countdown_holder')
+        , targetDate = new Date(2050, 00, 01);
+    clock.valueOf = countdown(targetDate).ToString();
+    setInterval(function () { clock.valueOf = countdown(targetDate).ToString(); }, 1000);
+</script>
+
+<h3 id='countdown_holder'> </h3>
+
+-->
+ @using (Html.BeginForm())
+ {
+    foreach (var v in Model.Category.VocabList)
+    {
+        <p>@v.Definition</p>
+        @Html.TextBoxFor(x => x.Answer)  <br />
+        
+    }
+    <input type ="submit" value ="Submit Answers" />
+ }
+

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="WordsBGoodDbContext-Web.config Connection String" description="WordsBGoodDbContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(localdb)\v11.0;AttachDBFilename=|DataDirectory|WordsBGood.mdf;Initial Catalog=WordsBGood;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Marian\\WordsBGood\\WordsBGood\\WordsBGood\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WordsBGoodDbContext']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,13 @@
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\WordsBGood.Domain.dll.config
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\WordsBGood.Domain.dll
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\WordsBGood.Domain.pdb
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.Migrations.AddQuizResultsTable.resources
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.Migrations.crap.resources
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.csproj.GenerateResource.Cache
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.dll
+C:\Users\Marian\WordsBGood\WordsBGood\WordsBGood.Domain\obj\Debug\WordsBGood.Domain.pdb

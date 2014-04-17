@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WordsBGood.Domain.Entities.User>
+
+@{
+    ViewBag.Title = "Online Users";
+}
+
+
+  <h3>Users Currently Online</h3>
+    <table>
+
+    @foreach (var u in Model) 
+    {
+        <tr>
+            <td>
+                @u.Name
+            </td> 
+        </tr>
+    }
+    
+    </table>
+

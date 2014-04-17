@@ -1,0 +1,27 @@
+﻿@model WordsBGood.WebUI.Models.UserCategories
+
+@{
+    ViewBag.Title = "Registration Successful";
+}
+<aside>
+    <h4>Users Currently Online</h4>
+        @foreach(var o in Model.OnlineNow)
+        {
+            Html.RenderPartial("OnlineSummary", o);
+        }
+</aside>
+
+<h3>Thank you, @Model.User.Name</h3>
+<p>You may now start building your vocabulary</p>
+<p>Your categories are:</p>
+<p>
+    @foreach (var u in Model.userCats) 
+    {
+        
+        @Html.ActionLink(u.Subject, "ShowVocab", "Vocab", new { subject = u.Subject}, null) <br />
+            
+    }
+</p>
+
+
+
